@@ -1,0 +1,40 @@
+
+1. How to deal with images?
+2. How to layer div with front div being nearly transparent?
+3. How to use display:grid?
+=>HTML    
+        <div class="wrapper">
+            <div class="nav"></div>
+            <div class="leftcolumn"></div>
+            <div class="rightcolumn"></div> 
+        </div>
+    CSS
+        <style>
+            .wrapper{
+            display:grid;
+            grid-template-columns: 1fr 1fr; /* No. of column */
+            grid-template-rows: 3em 30em; /* height of first row nad second row */    
+            grid-template-areas:
+                    "nav" "nav"
+                    "left-column" "right-column"
+            gap:10px;
+            }
+            .nav{
+                grid-area: nav;
+            }
+            .left-column{
+                grid-area: left-column;
+            }
+        </style>
+
+4.What are css variables?
+=>CSS
+        <style>
+            :root{
+                --mainText:red;
+            }
+            h1,h2{
+                color: var(--mainText);
+            }
+        </style>
+   
