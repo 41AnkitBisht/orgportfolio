@@ -128,7 +128,7 @@ nav ul li a {
 }
 @media screen and (max-width: 990px) {
   body {
-    overflow-x: hidden;
+    overflow-y: hidden;
   }
   h1 {
     font-size: 40px;
@@ -167,7 +167,7 @@ nav ul li a {
 
 @media screen and (max-width: 470px) {
   body {
-    overflow-x: hidden;
+    overflow-y: hidden;
   }
   h1 {
     font-size: 35px;
