@@ -6,6 +6,7 @@
 body {
   font-family: "RocknRoll One";
   color: rgb(253, 250, 250, 0.9);
+  overflow-x: hidden;
 }
 h1 {
   font-size: 50px;
@@ -127,9 +128,6 @@ nav ul li a {
   background-image: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
 }
 @media screen and (max-width: 990px) {
-  body {
-    overflow-y: hidden;
-  }
   h1 {
     font-size: 40px;
   }
@@ -143,9 +141,9 @@ nav ul li a {
   nav ul {
     position: absolute;
     top: 10vh;
-    right: 10%;
+    right: 85px;
     height: 10vh;
-    transform: translateX(150%);
+    transform: translateX(-150%);
     transition: all 1s ease-in;
   }
   nav ul li {
@@ -166,9 +164,6 @@ nav ul li a {
 }
 
 @media screen and (max-width: 470px) {
-  body {
-    overflow-y: hidden;
-  }
   h1 {
     font-size: 35px;
   }
@@ -180,7 +175,7 @@ nav ul li a {
     top: 10vh;
     right: 10%;
     height: 10vh;
-    transform: translateX(150%);
+    transform: translateX(-150%);
   }
   nav ul li {
     padding: 0 10px;
